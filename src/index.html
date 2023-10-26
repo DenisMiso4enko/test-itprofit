@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="icon" href="img/favicon.svg" type="image/svg+xml" />
+    <link rel="icon" href="img/favicon.png" type="image/png" />
+
+    <title>Форма</title>
+  </head>
+  <body>
+    <div class="container">
+      <form class="form">
+        <div class="input-control">
+          <label for="username">Имя</label>
+          <input id="username" name="username" type="text" />
+          <div class="error"></div>
+        </div>
+        <div class="input-control">
+          <label for="email">E-mail</label>
+          <input id="email" name="email" type="text" />
+          <div class="error"></div>
+        </div>
+        <div class="input-control">
+          <label for="phone">Телефон</label>
+          <input id="phone" name="phone" type="phone" />
+          <div class="error"></div>
+        </div>
+        <div class="input-control">
+          <label for="message">Сообщение</label>
+          <textarea
+            class="text"
+            name="message"
+            id="message"
+            cols="30"
+            rows="10"
+          ></textarea>
+          <div class="error"></div>
+        </div>
+        <button type="submit">Отправить</button>
+      </form>
+    </div>
+  </body>
+</html>
