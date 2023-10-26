@@ -12,22 +12,31 @@
   </head>
   <body>
     <div class="container">
-      <form class="form">
+      <h1 class="title">Обратная связь</h1>
+      <form class="form" id="form">
         <div class="input-control">
           <label for="username">Имя</label>
-          <input id="username" name="username" type="text" />
+          <input id="username" name="username" type="text" autocomplete="off" />
           <div class="error"></div>
         </div>
+
         <div class="input-control">
           <label for="email">E-mail</label>
           <input id="email" name="email" type="text" />
           <div class="error"></div>
         </div>
+
         <div class="input-control">
           <label for="phone">Телефон</label>
-          <input id="phone" name="phone" type="phone" />
+          <input
+            id="phone"
+            name="phone"
+            type="phone"
+            placeholder="+375 (29) 000-00-00"
+          />
           <div class="error"></div>
         </div>
+
         <div class="input-control">
           <label for="message">Сообщение</label>
           <textarea
@@ -39,8 +48,17 @@
           ></textarea>
           <div class="error"></div>
         </div>
-        <button type="submit">Отправить</button>
+        <button type="submit" class="submit-button">Отправить</button>
       </form>
+    </div>
+
+    <div id="modal" class="modal">
+      <div class="overlay">
+        <div class="modal-content">
+          <span class="close-button">&times;</span>
+          <p id="modal-message"></p>
+        </div>
+      </div>
     </div>
   </body>
 </html>
