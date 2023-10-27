@@ -1,5 +1,5 @@
 import { openModal } from "./modal";
-import { sendFormData } from "./sendFormData";
+
 const form = document.getElementById("form");
 const nameInput = document.getElementById("username");
 const emailInput = document.getElementById("email");
@@ -107,7 +107,6 @@ form.addEventListener("submit", (e) => {
       message: messageInput.value,
     };
 
-    // sendFormData(data);
     openModal("Форма отправлена успешно");
     cleanFields();
     cleanClasses();
